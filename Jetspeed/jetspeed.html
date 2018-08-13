@@ -6,37 +6,186 @@
 	<meta name="viewport" content="width=device-width">
 	<style type="text/css">
 		body {
+			margin: 0;
+			font-family: Tahoma, Geneva, sans-serif;
 			min-width: 960px;
 		}
+
 		.container {
-			width: 960px;
+
+			width:960px;
 			margin: 0 auto;
-			overflow:  auto;
-			border: 1px solid black;
+			overflow: auto;
 		}
+
 		header {
 			text-align: center;
 			width: 100%;
 		}
+
 		nav {
-			font-weight: bold;
-			background-image: url("Images/blacktile.jpg");
+			font-weight: bold;	
+			background-image: url("images/blacktile.jpg");
 			background-repeat: repeat-x;
 		}
-		ul{
+
+
+		nav ul, footer ul {
 			list-style-type: none;
-			margin: 0;
-			padding: 20px 0;
+			margin: 0px;
+			padding: 20px 0px;
 		}
-		li{
+
+		nav li, footer li{
 			display: inline;
 			margin: 20px;
 			text-transform: uppercase;
+		}
+
+			
+		nav a {
+			text-decoration: none;
+			color: white;	
+		}
+
+		nav a:hover {
+			border-bottom: 5px solid lightgray;
+		}
+
+		main 
+		{
+			text-align: center;
+			color: #505E67;
+			margin-bottom: 40px;
+		}
+
+		main h1 {
+			font-weight: bold;
+			letter-spacing: 0.5px;
+			font-size: 2.2em;
+			border-bottom: 1px dashed lightgray;
+			margin-top: 50px;
+		}
+
+		main img{
+			
+			width: 70%;
+			margin: auto;
+			padding: 2px;
+			border: 1px lightgray solid;
+		}
+
+
+		.customerBox {
+			border: 2px lightgray outset;
+			width: 60%;
+			margin-bottom: 20px;
+			border-radius: 10px;
+
+		}
+
+		.customerBox h1 {
+
+			font-size: 1.2em;
+			margin-top: 0;
+			padding: 10px;
+
+		}
+
+		.customerBox p {
+
+			padding: 0 10px;
+
+		}
+
+		.customerBox h2 {
+
+			border-top: 1px dashed lightgray;
+			font-size: 1em;
+			font-weight: normal;
+			font-style: italic;
+			text-align: right;
+			padding-top: 5px;
+			padding-right: 10px;
+
+		}
+
+		.floatLeft {
+			margin-left: 15%;
+			float: left;
+			
+		}
+
+		.floatRight {
+			margin-right: 15%;
+			float: right;
+		}
+
+
+		.clearfloat {
+			clear: both;
+		}
+
+		main table {
+			border: 1px solid lightgray;
+			margin: 0 auto;
+			padding: 5px;<!-- 
+			border-radius: 10px;
+		}
+
+		main th, main td {
+
+			padding: 20px;
+			border: 1px solid lightgray;
+
+		}
+
+		main th { -->
+
+			background-color: #505E67;
+			color: white;
+			font-size: 1.2em;
+
+		}
+
+		main tr:nth-child(odd) {
+			background-color: #E6E6E6;
+		}
+
+		footer {
+			text-align: center;
+			width: 100%;
+			background-color: #232244;
+			color: white;
+		}
+
+		footer a  {
+			color: white;
+		}
+		#contactUs {
+			width:150px;
+			height: 30px;
+			background-color: #26244B;
+			text-align: center;
+			padding-top: 10px;
+			border-radius: 5px;
+			position: fixed;
+			bottom: 0;
+			right: 0;
+			
+		}
+		#contactUs a{
+			color: white;
+			text-decoration: none;
 		}
 		
 	</style>
 </head>
 	<body>
+		<div id="contactUs">
+			<a href="mailto:jamie@learncodingfast.com">Email Us</a>
+		</div>
+
 		<header>
 			<img src="Images/logo.png" alt="logo">
 			<nav>
@@ -60,11 +209,11 @@
 				<p>Awarded Best Tour Agency in 2013, 2014</p>
 				<h1>Photo Galleries</h1>
 				<h2>Malaysia</h2>
-				<img src="Images/malaysia.jpg"
+				<img src="Images/malaysia.jpg">
 				<h2>Japan</h2>
-				<img src="Images/japan.jpg"
+				<img src="Images/japan.jpg">
 				<h2>China</h2>
-				<img src="Images/china.jpg"
+				<img src="Images/china.jpg">
 				<h1>What Customers Are Saying</h1>
 				<div class="customerBox floatLeft">
 					<h1>An incredible experience</h1>
@@ -106,6 +255,7 @@
 					forward to travelling with Jetspeed again.</p>
 					<h2>Gail Scott</h2>
 				</div>
+				<div class="clearfloat"></div>
 				<h1>Upcoming Tour Dates</h1>
 				<table>
 					<tr>
@@ -132,17 +282,14 @@
 			</div>
 		</main>
 		<footer>
-			<div class="container">				
-				<div class="container">
-					<ul>
-						
-						<li><a href="contact.html">Contact Us</a></li>
-						<li><a href="hotel.html">FAQ</a></li>
-						<li><a href="press.html">Press Release</a></li>
-						<li><a href="investor.html">Investor Relations</a></li>
-						<li><a href="policy.html">Privacy Policy</a></li>
-					</ul>
-				</div>			
+			<div class="container">					
+				<ul>				
+					<li><a href="contact.html">Contact Us</a></li>
+					<li><a href="hotel.html">FAQ</a></li>
+					<li><a href="press.html">Press Release</a></li>
+					<li><a href="investor.html">Investor Relations</a></li>
+					<li><a href="policy.html">Privacy Policy</a></li>
+				</ul>					
 			</div>
 		</footer>
 	</body>
